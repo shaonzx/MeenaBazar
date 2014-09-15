@@ -1,0 +1,372 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@android:color/black" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <TextView
+            android:id="@+id/registration_txtRegistration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/registration"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/registration_txtRegistrationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registration_txtRegistration"
+            android:layout_marginTop="14dp"
+            android:text="@string/registrationLabel"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/registration_edtFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registration_txtRegistrationLabel"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/registration_txtFirstName"
+            android:gravity="left"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/registration_edtLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registration_edtFirstName"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/registration_txtLastName"
+            android:gravity="left"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/registration_edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registration_edtLastName"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/registration_txtEmail"
+            android:gravity="left"
+            android:inputType="textEmailAddress"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/registration_edtTelephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registration_edtEmail"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/registration_txtTelephone"
+            android:gravity="left"
+            android:inputType="phone"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/registration_edtFax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registration_edtTelephone"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/registration_txtFax"
+            android:gravity="left"
+            android:inputType="numberSigned"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/registration_edtCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registration_edtFax"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/registration_txtCompany"
+            android:gravity="left"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/registration_edtAddress1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registration_edtCompany"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/registration_txtAddress1"
+            android:gravity="left"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/registration_edtAddress2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registration_edtAddress1"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/registration_txtAddress2"
+            android:gravity="left"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/registration_edtCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registration_edtAddress2"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/registration_txtCity"
+            android:gravity="left"
+            android:inputType="text"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/registration_edtPostCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registration_edtCity"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/registration_txtPostCode"
+            android:gravity="left"
+            android:inputType="numberSigned"
+            android:singleLine="true" />
+
+        <Spinner
+            android:id="@+id/registration_spnrCountry"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/registration_edtPostCode"
+            android:layout_toRightOf="@+id/registration_txtCountry"
+            android:entries="@array/country_arrays" />
+
+        <TextView
+            android:id="@+id/registration_txtRegionState"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/registration_txtCountry"
+            android:layout_marginTop="14dp"
+            android:text="@string/regionState"
+            android:textColor="@android:color/white" />
+
+        <Spinner
+            android:id="@+id/registration_spnrRegionState"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/registration_spnrCountry"
+            android:layout_toRightOf="@+id/registration_txtRegionState"
+            android:entries="@array/region_arrays" />
+
+        <EditText
+            android:id="@+id/registration_edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registration_spnrRegionState"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/registration_txtPassword"
+            android:gravity="left"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/registration_edtPasswordConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registration_edtPassword"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/registration_txtPasswordConfirm"
+            android:gravity="left"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/registration_txtNewsLetter"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/registration_txtPasswordConfirm"
+            android:layout_marginTop="14dp"
+            android:text="@string/newsLetter"
+            android:textColor="@android:color/white" />
+
+        <RadioGroup
+            android:id="@+id/registration_rdoGrpNewsLetter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registration_edtPasswordConfirm"
+            android:layout_toRightOf="@+id/registration_txtNewsLetter"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/registration_rdoYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/radioYes"
+                android:textColor="@android:color/white" />
+
+            <RadioButton
+                android:id="@+id/registration_rdoNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radioNo"
+                android:textColor="@android:color/white" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/registration_chkTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registration_rdoGrpNewsLetter"
+            android:layout_marginTop="20dp"
+            android:checked="false"
+            android:text="@string/chkTerm" />
+
+        <Button
+            android:id="@+id/registration_btnContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/registration_chkTerm"
+            android:layout_marginTop="20dp"
+            android:text="@string/btnContinue" />
+
+        <TextView
+            android:id="@+id/registration_txtFirstName"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/registration_edtFirstName"
+            android:layout_toLeftOf="@+id/registration_edtLastName"
+            android:text="@string/firstName"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/registration_txtLastName"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/registration_edtLastName"
+            android:layout_alignBottom="@+id/registration_edtLastName"
+            android:layout_toLeftOf="@+id/registration_edtEmail"
+            android:text="@string/lastName"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/registration_txtEmail"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/registration_edtEmail"
+            android:layout_alignBottom="@+id/registration_edtEmail"
+            android:layout_toLeftOf="@+id/registration_edtTelephone"
+            android:text="@string/email"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/registration_txtTelephone"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/registration_edtTelephone"
+            android:layout_alignBottom="@+id/registration_edtTelephone"
+            android:layout_toLeftOf="@+id/registration_edtFax"
+            android:text="@string/telephone"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/registration_txtFax"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/registration_edtFax"
+            android:layout_alignBottom="@+id/registration_edtFax"
+            android:layout_toLeftOf="@+id/registration_edtCompany"
+            android:text="@string/fax"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/registration_txtCompany"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/registration_edtCompany"
+            android:layout_alignBottom="@+id/registration_edtCompany"
+            android:layout_toLeftOf="@+id/registration_edtAddress1"
+            android:text="@string/company"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/registration_txtAddress1"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/registration_edtAddress1"
+            android:layout_alignBottom="@+id/registration_edtAddress1"
+            android:layout_toLeftOf="@+id/registration_edtAddress2"
+            android:text="@string/address1"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/registration_txtAddress2"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/registration_edtAddress2"
+            android:layout_alignBottom="@+id/registration_edtAddress2"
+            android:layout_toLeftOf="@+id/registration_edtCity"
+            android:text="@string/address2"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/registration_txtCity"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/registration_edtCity"
+            android:layout_alignBottom="@+id/registration_edtCity"
+            android:layout_toLeftOf="@+id/registration_edtPostCode"
+            android:text="@string/city"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/registration_txtPostCode"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/registration_edtPostCode"
+            android:layout_alignBottom="@+id/registration_edtPostCode"
+            android:layout_toLeftOf="@+id/registration_spnrCountry"
+            android:text="@string/postCode"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/registration_txtCountry"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/registration_spnrCountry"
+            android:layout_toLeftOf="@+id/registration_spnrRegionState"
+            android:text="@string/country"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/registration_txtPassword"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/registration_edtPassword"
+            android:layout_alignBottom="@+id/registration_edtPassword"
+            android:layout_alignLeft="@+id/registration_txtPasswordConfirm"
+            android:text="@string/password"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/registration_txtPasswordConfirm"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/registration_edtPasswordConfirm"
+            android:layout_alignBottom="@+id/registration_edtPasswordConfirm"
+            android:layout_toLeftOf="@+id/registration_rdoGrpNewsLetter"
+            android:text="@string/passwordConfirm"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</ScrollView>
