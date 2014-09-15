@@ -1,8 +1,340 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">MeenaBazar</string>
+    <string name="app_name">Meena Bazar</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    
+   
+
+    <string name="firstName">First Name:</string>
+    <string name="lastName">Last Name:</string>
+    <string name="email">Email:</string>
+    <string name="telephone">Telephone:</string>
+    <string name="fax">Fax:</string>
+    <string name="company">Company:</string>
+    <string name="address1">Address 1:</string>
+    <string name="address2">Assress 2:</string>
+    <string name="city">City:</string>
+    <string name="postCode">Post Code:</string>
+    <string name="country">Country:</string>
+    <string name="regionState">Region / State:</string>
+    <string name="password">Password:</string>
+    <string name="passwordConfirm">Password Confirm:</string>
+    <string name="newsLetter">Newsletter Subscribe:</string>
+    <string name="registration">Register Account</string>
+    <string name="registrationLabel">Create an account with us to receive newsletter &amp; promotion information.</string>
+    
+    <string-array name="country_arrays">
+        <item>--- Please Select ---</item>
+        <item>Bangladesh</item>
+    </string-array>
+    <string-array name="region_arrays">
+        <item> --- Please Select --- </item>
+		<item>Aam Bagan</item>
+		<item>Aam Bagan</item>
+		<item>Aamtola</item>
+		<item>Abdullahpur</item>
+		<item>Adarsha Chayanir Housing Society</item>
+		<item>Agargaon Taltola</item>
+		<item>Amligola</item>
+		<item>Aninda R/A</item>
+		<item>Asad Avenue</item>
+		<item>Ashkona</item>
+		<item>Azam Road</item>
+		<item>Azimpur</item>
+		<item>BCC Road</item>
+		<item>Babar Road</item>
+		<item>Babubazar</item>
+		<item>Baily Road</item>
+		<item>Baitul Aman Housing Society</item>
+		<item>Baluchar</item>
+		<item>Banani DOHS</item>
+		<item>Banani,Road-1</item>
+		<item>Banani,Road-10</item>
+		<item>Banani,Road-11</item>
+		<item>Banani,Road-12</item>
+		<item>Banani,Road-13</item>
+		<item>Banani,Road-13A</item>
+		<item>Banani,Road-13B</item>
+		<item>Banani,Road-13C</item>
+		<item>Banani,Road-13D</item>
+		<item>Banani,Road-13E</item>
+		<item>Banani,Road-14</item>
+		<item>Banani,Road-15</item>
+		<item>Banani,Road-16</item>
+		<item>Banani,Road-17</item>
+		<item>Banani,Road-17A</item>
+		<item>Banani,Road-18</item>
+		<item>Banani,Road-18A</item>
+		<item>Banani,Road-19</item>
+		<item>Banani,Road-19A</item>
+		<item>Banani,Road-2</item>
+		<item>Banani,Road-20</item>
+		<item>Banani,Road-21</item>
+		<item>Banani,Road-22</item>
+		<item>Banani,Road-23</item>
+		<item>Banani,Road-24</item>
+		<item>Banani,Road-25</item>
+		<item>Banani,Road-26</item>
+		<item>Banani,Road-27</item>
+		<item>Banani,Road-3</item>
+		<item>Banani,Road-4</item>
+		<item>Banani,Road-5</item>
+		<item>Banani,Road-6</item>
+		<item>Banani,Road-6A</item>
+		<item>Banani,Road-6B</item>
+		<item>Banani,Road-7</item>
+		<item>Banani,Road-7A</item>
+		<item>Banani,Road-7B</item>
+		<item>Banani,Road-8</item>
+		<item>Banani,Road-9</item>
+		<item>Bangla Motor</item>
+		<item>Baridhara DOHS</item>
+		<item>Baridhara R/A</item>
+		<item>Basbari Road</item>
+		<item>Bashundhara R/A</item>
+		<item>Bayezid Bostami</item>
+		<item>Bhuyan Para</item>
+		<item>Bibirhat</item>
+		<item>Bijli Moholla</item>
+		<item>Bohoddarhat</item>
+		<item>Bondor Bazar</item>
+		<item>Bongshal</item>
+		<item>Chamelibagh</item>
+		<item>Chan Mia Housing Sciety</item>
+		<item>Chata Masjid</item>
+		<item>Chatgaon R/A</item>
+		<item>Chok Bazar</item>
+		<item>Chowhatta</item>
+		<item>Chowmuhoni</item>
+		<item>Court Point</item>
+		<item>Cowgaon</item>
+		<item>Dattapara</item>
+		<item>Dhaka Cantonment</item>
+		<item>Dhaka Housing Society</item>
+		<item>Dhaka University</item>
+		<item>Dhakeswary </item>
+		<item>Dhanmondi 15 (new)</item>
+		<item>Dhanmondi Rd # 1 (New)</item>
+		<item>Dhanmondi Rd # 1 A (New)</item>
+		<item>Dhanmondi Rd # 10 (New)</item>
+		<item>Dhanmondi Rd # 10 A (New)</item>
+		<item>Dhanmondi Rd # 11  (New)</item>
+		<item>Dhanmondi Rd # 11 A (New)</item>
+		<item>Dhanmondi Rd # 12 (New)</item>
+		<item>Dhanmondi Rd # 12 A (New)</item>
+		<item>Dhanmondi Rd # 13  (New)</item>
+		<item>Dhanmondi Rd # 13 A (New)</item>
+		<item>Dhanmondi Rd # 14 (New)</item>
+		<item>Dhanmondi Rd # 14 A (New)</item>
+		<item>Dhanmondi Rd # 16  (New)</item>
+		<item>Dhanmondi Rd # 16 A (New)</item>
+		<item>Dhanmondi Rd # 2 (New)</item>
+		<item>Dhanmondi Rd # 2 A (New)</item>
+		<item>Dhanmondi Rd # 3 (New)</item>
+		<item>Dhanmondi Rd # 3 A (New)</item>
+		<item>Dhanmondi Rd # 4 (New)</item>
+		<item>Dhanmondi Rd # 4 A (New)</item>
+		<item>Dhanmondi Rd # 5 (New)</item>
+		<item>Dhanmondi Rd # 5 A (New)</item>
+		<item>Dhanmondi Rd # 6 (New)</item>
+		<item>Dhanmondi Rd # 6 A (New)</item>
+		<item>Dhanmondi Rd # 7 (New)</item>
+		<item>Dhanmondi Rd # 7 A (New)</item>
+		<item>Dhanmondi Rd # 8 (New)</item>
+		<item>Dhanmondi Rd # 8 A (New)</item>
+		<item>Dhanmondi Rd # 9 (New)</item>
+		<item>Dhanmondi Rd # 9 A (New)</item>
+		<item>Dholairpar</item>
+		<item>Dilu Road</item>
+		<item>Dkkhin Khan</item>
+		<item>East Goran</item>
+		<item>East Kafrul</item>
+		<item>Eidgah</item>
+		<item>Fakirapool</item>
+		<item>Farazi Para</item>
+		<item>Fulpar</item>
+		<item>GEC Circle</item>
+		<item>Gabtola</item>
+		<item>Garibullah Shah Mazar</item>
+		<item>Gol Pahar</item>
+		<item>Goran Bazar</item>
+		<item>Gulishtan</item>
+		<item>Gulshan 1</item>
+		<item>Gulshan 2</item>
+		<item>Gulshan Avenue : (Rd. 24,25,26,27,28)</item>
+		<item>Hazaribag</item>
+		<item>Hindu Para</item>
+		<item>House Building</item>
+		<item>House Para</item>
+		<item>Housing Estate</item>
+		<item>Humayun Road</item>
+		<item>Iqbal Road</item>
+		<item>Jafrabad</item>
+		<item>Jalalabad</item>
+		<item>Janata Housing Society</item>
+		<item>Japan Garden City</item>
+		<item>Jatrabari</item>
+		<item>Jigatola</item>
+		<item>Jollarpar</item>
+		<item>Kadirabad Housing Society</item>
+		<item>Kakrail</item>
+		<item>Kalachadpur</item>
+		<item>Katashur</item>
+		<item>Kazi Para</item>
+		<item>Kellar Bazar</item>
+		<item>Kemal Ataturk Avenue</item>
+		<item>Khan A Sabur Road</item>
+		<item>Khaza Dewan</item>
+		<item>Khilkhet</item>
+		<item>Khilkhet</item>
+		<item>Khulshi</item>
+		<item>Kolabagan</item>
+		<item>Kumarpara</item>
+		<item>Kuratoli</item>
+		<item>Kuril</item>
+		<item>Lalbagh</item>
+		<item>Lalmatia (Block A,B)</item>
+		<item>Lalmatia (Block:C,D,E &amp; F)</item>
+		<item>Lamabazar</item>
+		<item>Malibagh</item>
+		<item>Manik Mia Avenue</item>
+		<item>Manikmia Avenue</item>
+		<item>Mansurabad Housing Society</item>
+		<item>Mehedi Bag</item>
+		<item>Meradia</item>
+		<item>Meradia Hat</item>
+		<item>Merul </item>
+		<item>Middle Badda</item>
+		<item>Mill Gate</item>
+		<item>Minto Road</item>
+		<item>Mirboxtola</item>
+		<item>Mirpur</item>
+		<item>Mirpur 10</item>
+		<item>Mirpur 11</item>
+		<item>Mirpur 12</item>
+		<item>Mirpur 12 Cantonment</item>
+		<item>Mirpur 14</item>
+		<item>Mirpur 2</item>
+		<item>Mirpur DOHS</item>
+		<item>Mirpur Darussalam</item>
+		<item>Moddho Para</item>
+		<item>Moghbazar</item>
+		<item>Mohakhali C/A</item>
+		<item>Mohakhali DOHS</item>
+		<item>Mohakhali R/A</item>
+		<item>Mohammodia Housing Ltd.</item>
+		<item>Mohammodia Housing Society</item>
+		<item>Motijheel</item>
+		<item>Motijheel</item>
+		<item>Moylapotty</item>
+		<item>Muradpur</item>
+		<item>Nabday Housing Society</item>
+		<item>Naior Pool</item>
+		<item>Narinda</item>
+		<item>Nasira Bad</item>
+		<item>New Eskaton</item>
+		<item>New Market (CTG)</item>
+		<item>New Market (Khulna)</item>
+		<item>New Paltan</item>
+		<item>Nikunja R/A</item>
+		<item>Nikunja-1</item>
+		<item>Nikunja-2</item>
+		<item>Nirala</item>
+		<item>Nodda</item>
+		<item>North Banasree</item>
+		<item>North Kafrul</item>
+		<item>Noya Paltan</item>
+		<item>Noyapara (BN)</item>
+		<item>Noyasarak</item>
+		<item>Noyotola</item>
+		<item>Nurjahan Road</item>
+		<item>Old Eskaton</item>
+		<item>PC Culture Housing Society</item>
+		<item>Pachlaish</item>
+		<item>Paikpara</item>
+		<item>Paltan</item>
+		<item>Peer Saheber Goli</item>
+		<item>Picture Palace</item>
+		<item>Porabari</item>
+		<item>Posta</item>
+		<item>Probortak</item>
+		<item>Pyeara Bag</item>
+		<item>Rajarbagh</item>
+		<item>Rampura </item>
+		<item>Rayer Bazar</item>
+		<item>Raynagar</item>
+		<item>Razia Sultana Road</item>
+		<item>Red Crescent Road</item>
+		<item>Royal More</item>
+		<item>Ruby Gate</item>
+		<item>Rupnagar</item>
+		<item>Saidabad</item>
+		<item>Salimullah Road</item>
+		<item>Sector 1</item>
+		<item>Sector 10</item>
+		<item>Sector 11</item>
+		<item>Sector 12</item>
+		<item>Sector 13</item>
+		<item>Sector 14</item>
+		<item>Sector 3</item>
+		<item>Sector 4</item>
+		<item>Sector 5</item>
+		<item>Sector 6</item>
+		<item>Sector 7</item>
+		<item>Sector 8</item>
+		<item>Sector 9</item>
+		<item>Sector-05</item>
+		<item>Sector-12</item>
+		<item>Sector-13</item>
+		<item>Sector-14</item>
+		<item>Sector-2</item>
+		<item>Sector-5</item>
+		<item>Segunbagicha</item>
+		<item>Sen Para Parbota</item>
+		<item>Shahid Nagar</item>
+		<item>Shahjahan Pur</item>
+		<item>Shamibag</item>
+		<item>Shankar</item>
+		<item>Shantibag</item>
+		<item>Shawra Kuril</item>
+		<item>Sheikh Shaheb Bazar</item>
+		<item>Sheikh para</item>
+		<item>Sher Shah Shuri Road</item>
+		<item>Sher-E-Bangla Road</item>
+		<item>Shewra Para</item>
+		<item>Shibgonj</item>
+		<item>Shipahi Bag</item>
+		<item>Shodorghat</item>
+		<item>Shukrabad</item>
+		<item>Shyamoly</item>
+		<item>Sir Sayed Ahmed Road</item>
+		<item>Sobanbagh</item>
+		<item>Sola Danga</item>
+		<item>South Banasree</item>
+		<item>Station Road</item>
+		<item>Subhanighat</item>
+		<item>Subidbazar</item>
+		<item>Sugandha R/A</item>
+		<item>Sukrabad</item>
+		<item>Sutrapur</item>
+		<item>TB Gate</item>
+		<item>Tajmahal Road</item>
+		<item>Taltola</item>
+		<item>Taltola</item>
+		<item>Tikka Para</item>
+		<item>Upashahar</item>
+		<item>Uttar Khan</item>
+		<item>West Kafrul</item>
+		<item>Zail Road</item>
+		<item>Zakir Hossen Road</item>
+		<item>Zindabazar</item>
+    </string-array>
+    <string name="radioYes">Yes</string>
+    <string name="radioNo">No</string>
+    <string name="btnContinue">Continue</string>
+    <string name="chkTerm">I have read and agree to the Privacy Policy</string>
+    
 
 </resources>
