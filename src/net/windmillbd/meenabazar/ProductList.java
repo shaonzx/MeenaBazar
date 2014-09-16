@@ -46,10 +46,10 @@ public class ProductList extends ActionBarActivity{
         aListView = (ListView) findViewById(R.id.product_list_products);
         displayContent = new ArrayList<String>();
  
-        new GetCategories().execute();
+        new GetProducts().execute();
     }
 
-    private class GetCategories extends AsyncTask<Void, Void, Void> {
+    private class GetProducts extends AsyncTask<Void, Void, Void> {
  
         @Override
         protected void onPreExecute() {
@@ -71,7 +71,7 @@ public class ProductList extends ActionBarActivity{
             List<NameValuePair> pair = new ArrayList<NameValuePair>();
 			pair.add(new BasicNameValuePair("category_id", id));
 
-            String jsonStr = sh.makeServiceCall(url, ServiceHandler.GET, pair);
+            String jsonStr = sh.makeServiceCall(url, ServiceHandler.POST, pair);
  
             Log.d("Response: ", "> " + jsonStr);
  

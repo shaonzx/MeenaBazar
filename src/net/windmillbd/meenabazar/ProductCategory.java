@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import net.windmillbd.meenabazar.models.CategoryInfo;
 import net.windmillbd.meenabazar.models.ServiceHandler;
 
 import org.json.JSONArray;
@@ -36,6 +37,7 @@ public class ProductCategory extends ActionBarActivity {
     
     ListView aListView;
     List<String> displayContent;
+    List<CategoryInfo> categorylist;
 
     ArrayList<HashMap<String, String>> category_List;
  
@@ -46,6 +48,7 @@ public class ProductCategory extends ActionBarActivity {
         
         aListView = (ListView) findViewById(R.id.category_list_categories);
         displayContent = new ArrayList<String>();
+        categorylist = new ArrayList<CategoryInfo>();
  
         new GetCategories().execute();
     }
@@ -79,15 +82,20 @@ public class ProductCategory extends ActionBarActivity {
 
                     categories = jsonObj.getJSONArray(TAG_CATEGORIES);
 
+                    CategoryInfo info = null;
+                    
                     for (int i = 0; i < categories.length(); i++) {
                         JSONObject c = categories.getJSONObject(i);
                          
-                        String categoryId = c.getString(TAG_CATEGORY_ID);
+                        String categoryID = c.getString(TAG_CATEGORY_ID);
                         String name = c.getString(TAG_NAME);
+                        
+                        info = new CategoryInfo(name, categoryID);
+                        categorylist.add(info);
  
                         HashMap<String, String> category = new HashMap<String, String>();
 
-                        category.put(TAG_CATEGORY_ID, categoryId);
+                        category.put(TAG_CATEGORY_ID, categoryID);
                         category.put(TAG_NAME, name);
                         
                         displayContent.add(name);
@@ -119,7 +127,8 @@ public class ProductCategory extends ActionBarActivity {
 						int position, long id) {
 					// TODO Auto-generated method stub
 					Intent i = new Intent(ProductCategory.this, ProductList.class);
-					i.putExtra("categoryID","20");
+					//String categoryID = String.valueOf(dis);
+					i.putExtra("categoryID",categorylist.get(position).getCategoryId());
 					startActivity(i);
 				}
 			});
@@ -129,8 +138,4 @@ public class ProductCategory extends ActionBarActivity {
     }
     
 }
-
-/*String name = ((TextView) view.findViewById(R.id.name))
-.getText().toString();
-in.putExtra(TAG_NAME, name);*/
 
