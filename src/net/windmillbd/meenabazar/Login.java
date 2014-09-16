@@ -17,6 +17,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import net.windmillbd.meenabazar.models.JsonMaker;
+import net.windmillbd.meenabazar.shared_preferences.SessionManager;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -141,10 +142,14 @@ public class Login extends Activity {
 			
 			String message = null;
 			boolean isSuccess = false;
+			String customerId = null;
 			
 			try {
 				message = aJSONObject.getString("message");
 				isSuccess = aJSONObject.getBoolean("success");
+				customerId = aJSONObject.getJSONObject("userDetails")
+						.getJSONObject("result").getString("customer_id");
+				
 			} catch (JSONException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -152,6 +157,9 @@ public class Login extends Activity {
 			
 			if(isSuccess)
 			{
+				SessionManager session = new SessionManager(getApplicationContext());				
+				session.CreateLoginSession(customerId);
+				
 				Intent i = new Intent(Login.this, Dashboard.class);
 				i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 				i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -163,8 +171,6 @@ public class Login extends Activity {
 			
 			
 		}
-		
-		
 		
 	}
 	

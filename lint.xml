@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="CommitPrefEdits">
+        <ignore path="src/net/windmillbd/meenabazar/shared_preferences/SessionManager.java" />
+    </issue>
+</lint>

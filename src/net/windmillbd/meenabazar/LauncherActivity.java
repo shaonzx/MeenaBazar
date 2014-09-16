@@ -1,5 +1,6 @@
 package net.windmillbd.meenabazar;
 
+import net.windmillbd.meenabazar.shared_preferences.SessionManager;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,42 +22,42 @@ public class LauncherActivity extends Activity{
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.launcher);
 		
-		/*ImageButton btnProductCategory;
-		
-		btnProductCategory = (ImageButton) findViewById(R.id.dashboard_imgbtnProductCatagory);
-		
-		btnProductCategory.setOnClickListener(new OnClickListener() {
+		SessionManager session = new SessionManager(getApplicationContext());
+		if(session.IsLoggedIn())
+		{
+			Intent intentToDashboard = new Intent(this, Dashboard.class);
+			intentToDashboard.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+			intentToDashboard.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+			startActivity(intentToDashboard);
 			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent i = new Intent(LauncherActivity.this, ProductCategory.class);
-				startActivity(i);
-			}
-		});*/
-		
-		Initialize();
-		
-		btnLogin.setOnClickListener(new OnClickListener() {
+		}else{		
 			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent i = new Intent(LauncherActivity.this, Login.class);
-				startActivity(i);
-			}
-		});
-		
-		btnRegister.setOnClickListener(new OnClickListener() {
+			setContentView(R.layout.launcher);	
+			Initialize();
 			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent i = new Intent(LauncherActivity.this, Registration.class);
-				startActivity(i);
-			}
-		});
+			btnLogin.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View v) {
+					// TODO Auto-generated method stub
+					Intent i = new Intent(LauncherActivity.this, Login.class);
+					startActivity(i);
+				}
+			});
+			
+			btnRegister.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View v) {
+					// TODO Auto-generated method stub
+					Intent i = new Intent(LauncherActivity.this, Registration.class);
+					startActivity(i);
+				}
+			});			
+		}
+		
+		
+
 	}	
 }
