@@ -127,7 +127,7 @@ public class ProductCategory extends ActionBarActivity {
 						int position, long id) {
 					// TODO Auto-generated method stub
 					Intent i = new Intent(ProductCategory.this, ProductList.class);
-					//String categoryID = String.valueOf(dis);
+					
 					i.putExtra("categoryID",categorylist.get(position).getCategoryId());
 					startActivity(i);
 				}

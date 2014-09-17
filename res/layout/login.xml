@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="27dp"
         android:layout_marginTop="182dp"
-        android:text="Email" />
+        android:text="@string/email" />
 
     <EditText
         android:id="@+id/login_edtEmail"
@@ -36,7 +36,7 @@
         android:layout_centerVertical="true"
         android:singleLine="true" 
         android:ems="10"
-         />
+        android:inputType="textPassword" />
 
     <TextView
         android:id="@+id/login_txtPassword"
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
-        android:text="Password"
+        android:text="@string/password"
         android:layout_marginLeft="5dp" />
 
     <Button
@@ -56,6 +56,6 @@
         android:layout_marginRight="33dp"
         android:layout_marginTop="64dp"
         android:ems="8"
-        android:text="Login" />
+        android:text="@string/login" />
 
 </RelativeLayout>

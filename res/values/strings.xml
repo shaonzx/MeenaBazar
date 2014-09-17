@@ -340,7 +340,9 @@
     <string name="specialOffer">Special Offer</string>
     <string name="customerFeedback">Customer Feedback</string>
     <string name="sellers">BEST SELLERS</string>
+    <string name="similer_products">Similiar Products</string>
     <string name="search">search</string>
+    <string name="login">Login</string>
     
 
 </resources>

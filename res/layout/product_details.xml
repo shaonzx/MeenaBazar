@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#efefef"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/product_details_edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_bar"
+            android:ems="7"
+            android:hint="@string/search"
+            android:paddingLeft="25dp" />
+
+        <RelativeLayout
+            android:id="@+id/product_details_layout4DirectionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_details_edtSearch"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/direction_text_background"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/product_details_txtDirectionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Some Habijabi Text"
+                android:textColor="#49b6fb" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/product_details_layoutMainProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:layout_below="@+id/product_details_layout4DirectionText"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/single_product_product_back" >
+
+            <ImageView
+                android:id="@+id/product_details_imgProductImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:id="@+id/product_details_viewOne"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/product_details_imgProductImage"
+                android:background="#949494" />
+            
+            <TextView
+                android:id="@+id/product_details_txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_details_viewOne"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_toLeftOf="@+id/product_details_imgbtnAddToCart"
+                android:text="999/-"
+                android:textColor="#eb3543" />
+
+            <TextView
+                android:id="@+id/product_details_txtQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_details_txtPrice"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/product_details_txtPrice"
+                android:text="QTY" />
+
+            <EditText
+                android:id="@+id/product_details_edtQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/product_details_txtQuantity"
+                android:layout_alignBottom="@+id/product_details_txtQuantity"
+                android:layout_toRightOf="@+id/product_details_txtQuantity"
+                android:ems="2" />
+            
+             <ImageButton
+                 android:id="@+id/product_details_imgbtnAddToCart"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="5dp"
+                 android:layout_below="@+id/product_details_txtPrice"
+                 android:background="@drawable/button_add_to_cart_ontouch"
+                 android:scaleType="fitXY" />
+             
+             <View
+                android:id="@+id/product_details_viewTwo"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/product_details_imgbtnAddToCart"
+                android:background="#949494" />
+            
+             <TextView
+                android:id="@+id/product_details_txtProductDescriptionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_details_viewTwo"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="5dp"
+                android:text="Description" />
+             
+             <TextView
+                android:id="@+id/product_details_txtProductDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_details_txtProductDescriptionTitle"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="Description" />
+
+        </RelativeLayout>
+
+
+        
+        <RelativeLayout
+            android:id="@+id/product_details_layoutSimilarProduct"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_below="@+id/product_details_layoutMainProduct"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#ffffff" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ec0726"
+                android:text="@string/similer_products"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+</ScrollView>

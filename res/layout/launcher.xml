@@ -13,9 +13,8 @@
         android:layout_alignParentRight="true"
         android:layout_marginBottom="16dp"
         android:layout_marginRight="22dp"
-        
+        android:contentDescription="@string/hello_world"
         android:scaleType="fitXY"
-        
         android:background="@drawable/button_login_ontouch" />
 
     <ImageButton
@@ -25,6 +24,7 @@
         android:layout_alignLeft="@+id/launcher_imgbtnLogin"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="56dp"
+        android:contentDescription="@string/hello_world"
         android:background="@drawable/button_register_ontouch"
         android:scaleType="fitXY" />
 
